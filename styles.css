@@ -1,7 +1,17 @@
+/* Next changes I need to make: 
+Fix octopus image
+SPACING
+Table properties
+*/
+
+:root {
+    --main-background: #eeeeee;
+}
+
 body {
-    /* Fix later, this isn't the right font */
+    /* Nevermind, don't fix, apparently it's right??? */
     font-family: Arial;
-    background-color: #e6e6e6;
+    background-color: #e8e8e8;
 }
 
 #header {
@@ -9,8 +19,8 @@ body {
     background-color: #0068e2;
     text-align: center;
     padding: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 #header h1 {
@@ -29,26 +39,34 @@ body {
 }
 
 #main-content {
-    background-color: white;
+    background-color: var(--main-background);
     padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
 }
 
 #main-content h2, h3 {
     text-transform: uppercase;
 }
 
-#footer {
-    background-color: #cacaca;
-    text-align: center;
-    padding: 1px;
+#quiz-section {
+    background-color: #e2f6ff;
+    padding: 20px;
+    border: 1px solid #cccccc;
 }
 
 #species-table {
-    background-color: white;
-    margin-left: 20px;
-    margin-right: 20px;
+    background-color: var(--main-background);
+    margin-left: 40px;
+    margin-right: 40px;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+
+#species-table h2 {
+    margin: 0;
 }
 
 table {
@@ -58,4 +76,19 @@ table {
 th {
     background-color: #8e8e8e;
     color: white;
+}
+
+#footer {
+    background-color: var(--main-background);
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 0;
+}
+
+#footer p {
+    background-color: #c5c5c5;
+    padding: 15px
 }
