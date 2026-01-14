@@ -1,0 +1,61 @@
+body {
+    /* Fix later, this isn't the right font */
+    font-family: Arial;
+    background-color: #e6e6e6;
+}
+
+#header {
+    color: white;
+    background-color: #0068e2;
+    text-align: center;
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#header h1 {
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+
+#header p {
+    margin-top: 0;
+    font-style: italic;
+}
+
+.important {
+    color: #fc521c;
+    font-weight: bold;
+}
+
+#main-content {
+    background-color: white;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#main-content h2, h3 {
+    text-transform: uppercase;
+}
+
+#footer {
+    background-color: #cacaca;
+    text-align: center;
+    padding: 1px;
+}
+
+#species-table {
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+table {
+    text-align: left;
+}
+
+th {
+    background-color: #8e8e8e;
+    color: white;
+}
