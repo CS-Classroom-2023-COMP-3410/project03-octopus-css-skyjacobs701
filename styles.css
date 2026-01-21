@@ -1,17 +1,9 @@
-/* Next changes I need to make: 
-SPACING
-- Under "Anatomy"
-- Around "External Resources"
-- Above "Octopus Quiz"
-Table properties
-- Text properties
-- Cell sizes
-*/
-
+/* root for background color variable */
 :root {
     --main-background: #eeeeee;
 }
 
+/* body styles for font, background color, and layout */
 body {
     font-family: Arial;
     background-color: #e8e8e8;
@@ -19,6 +11,7 @@ body {
     margin: 0 auto;
 }
 
+/* header styles for colors, text alignment, and spacing */
 #header {
     color: white;
     background-color: #0068e2;
@@ -28,17 +21,21 @@ body {
     margin-right: 40px;
 }
 
+/* header title styles, mainly to handle spacing */
 #header h1 {
     margin-top: 10px;
     margin-bottom: 5px;
     font-size: 40px;
 }
 
+/* header paragraph styles, also mainly to handle spacing */
 #header p {
     margin-top: 0;
     font-style: italic;
 }
 
+/* main-content styles */
+/* handles colors and spacing */
 #main-content {
     background-color: var(--main-background);
     padding: 20px;
@@ -48,37 +45,87 @@ body {
     border-right: 1px solid #cccccc;
 }
 
+/* handles spacing between "introduction" and first paragraph */
 #main-content h2 {
     margin-bottom: 30px;
     text-transform: uppercase;
 }
 
+/* handles spacing between first paragraph, "amazing facts", and unordered list */
 #main-content h3 {
+    margin-top: 0;
     margin-bottom: 25px;
     text-transform: uppercase;
 }
 
+/* handles spacing between "anatomy" and second paragraph */
+#main-content h4 {
+    margin-bottom: 5px;
+}
+
+/* handles spacing between second paragraph, "comparison with [...]", and ordered list */
+#main-content h5 {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+/* handles spacing between "external resources" and third paragraph */
+#main-content h6 {
+    margin-bottom: 0px;
+}
+
+/* main-content list styles */
+/* indents unordered list */
+#main-content ul {
+    padding-left: 35px;
+}
+
+/* handles spacing between unordered list items */
+#main-content ul li {
+    margin-bottom: 10px;
+}
+
+/* indents ordered list */
+#main-content ol {
+    padding-left: 30px;
+}
+
+/* handles spacing between ordered list items */
+#main-content ol li {
+    margin-bottom: 5px;
+}
+
+/* changes color and font weight for important text */
 .important {
     color: #fc521c;
     font-weight: bold;
 }
 
+/* quiz-section styles */
+/* handles spacing, colors, and border of quiz-section */
 #quiz-section {
     background-color: #e2f6ff;
     padding: 20px;
     border: 1px solid #cccccc;
 }
 
+/* handles the octopus image */
 #quiz-section img {
     border: 4px solid #7700e2;
     float: right;
     margin-right: 50px;
-    margin-top: 15px;
-    width: 80px;
+    margin-top: 20px;
+    width: 90px;
     height: auto;
 }
 
+/* handles spacing between quiz-section form elements */
+#quiz-section input {
+    margin-bottom: 5px;
+}
 
+/* species table styles */
+/* handles spacing and color of table elements and borders */
 #species-table {
     background-color: var(--main-background);
     margin-left: 40px;
@@ -87,19 +134,31 @@ body {
     border-right: 1px solid #cccccc;
 }
 
+/* handles spacing around "common octopus species", specifically between it and the table */
 #species-table h2 {
     margin: 0;
+    padding-bottom: 1px;
 }
 
+/* aligns all text to the left */
 table {
     text-align: left;
 }
 
+/* handles table header colors and spacing */
 th {
     background-color: #999999;
     color: white;
+    padding: 7px;
 }
 
+/* handles cell spacing */
+td {
+    padding: 7px;
+}
+
+/* footer styles */
+/* handles spacing and background color, aligns text to center */
 #footer {
     background-color: var(--main-background);
     text-align: center;
@@ -110,7 +169,8 @@ th {
     margin-bottom: 0;
 }
 
+/* handles spacing and background color for text of footer */
 #footer p {
     background-color: #c5c5c5;
-    padding: 15px
+    padding: 15px;
 }
